@@ -1,0 +1,22 @@
+@media screen and (max-width: 1024px){
+    .container{
+        flex-direction: column;
+        padding: 3rem 2.5rem;
+        
+    }
+
+    .box__insert__text{
+        width: 100%;
+    }
+
+    .box__result__text{
+        width: 100%;
+       
+    }
+}
+
+@media screen and (max-width: 430px){
+    .box__button{
+        flex-direction: column;
+    }
+}
