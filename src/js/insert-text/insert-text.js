@@ -24,11 +24,12 @@ btn__dencrypt.addEventListener('click', () => {
 });
 
 btn__copy.addEventListener('click', () => {    
-    navigator.clipboard.writeText(text__result.value).then(function() {
-        console.log('Texto copiado com sucesso!');
-    }).catch(function(err) {
-        console.error('Erro ao copiar o texto: ', err);
-    });
+    navigator.clipboard.writeText(text__result.value)
+    // .then(function() {
+    //     alert('Texto copiado com sucesso!');
+    // }).catch(function(err) {
+    //     alert('Erro ao copiar o texto: ', err);
+    // });
 });
 
 function encrypt(frase) {
