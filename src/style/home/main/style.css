@@ -13,7 +13,8 @@
   justify-content: center;
   padding: 2rem 2rem;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
+
 }
 
 .box__insert__text {
@@ -30,7 +31,7 @@
 .box__text {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: start;
   text-align: center;
   flex-direction: column;
   gap: 2rem;
@@ -41,7 +42,7 @@
 }
 
 .box__insert__text .box__text textarea{
-    font-size: var(--font-size-200);
+    font-size: var(--font-size-300);
 }
 
 .box__result__text .box__text span{
