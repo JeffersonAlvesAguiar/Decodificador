@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2.5rem;
+    gap: 3rem;
+  }
+  
+  .container__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem;
+    flex-direction: column;
+    gap: 1rem;
+  
+  }
+    

@@ -1,0 +1,16 @@
+.box__result__text {
+  width: 30%;
+  border-radius: 2rem;
+
+  background-color: var(--white-100);
+}
+
+.box__button__result {
+  width: 100%;
+  display: none;
+  align-items: center;
+}
+
+.box__button__result .btn__copy {
+  width: 100%;
+}

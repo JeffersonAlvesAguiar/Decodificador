@@ -8,72 +8,46 @@
     <link rel="stylesheet" href="./src/style/theme/theme.css" />
     <link rel="stylesheet" href="./src/style/wrapper/wrapper.css" />
 
-    <link rel="stylesheet" href="./src/style/home/header/style.css" />
-    <link rel="stylesheet" href="./src/style/home/main/style.css" />
-    <link rel="stylesheet" href="./src/style/home/main/style.responsive.css" />
+    <link rel="stylesheet" href="./src/components/alert/start/style.css" />
+    <link rel="stylesheet" href="./src/components/textarea/text-insert/style.css" />
+    <link rel="stylesheet" href="./src/components/textarea/text-result/style.css" />
+
+    <link rel="stylesheet" href="./src/views/header/style.css" />
+
+    <link rel="stylesheet" href="./src/views/main/style.css" />
+    <link rel="stylesheet" href="./src/views/main/responsive.css" />
+
+    <link rel="stylesheet" href="./src/views/main/box-insert-text/style.css" />
+    <link rel="stylesheet" href="./src/views/main/box-result-text/style.css" />
 
     <title>Decodificador</title>
   </head>
   <body>
     <header>
-      <div class="nav__bar">
-        <img src="./src/assets/icon/icons8-cool-64 (1).png" />
-      </div>
+      <div class="nav__bar"></div>
     </header>
 
     <main>
       <div class="container">
-        <div class="container__box box__insert__text">
-          <div class="box__text">
-            <div>
-              <img src="./src/assets/icon/bi_exclamation-circle-fill.png" />
-              <label for="text">Apenas letras minúsculas e sem acento.</label>
-            </div>
-            <textarea
-              class="text__insert"
-              name="text"
-              id="text"
-              cols="30"
-              rows="10"
-              placeholder="Digite seu texto"
-            ></textarea>
-          </div>
+        <div class="container__box box__insert__text"></div>
 
-          <div class="box__button">
-            <button class="btn__encrypt">Criptografar</button>
-            <button class="btn__dencrypt">Descriptografar</button>
-          </div>
-        </div>
-
-        <div class="container__box box__result__text">
-          <div class="box__text text__alert">
-            <img
-              class="img__box__text"
-              src="./src/assets/img/High quality products 1 1.svg"
-            />
-            <span>Nenhuma mensagem encontrada</span>
-            <p>
-              Digite um texto que você deseja criptografar ou descriptografar
-            </p>
-          </div>
-
-          <div class="box__text textarea__result">
-            <textarea
-              class="text__result"
-              disabled
-              cols="30"
-              rows="10"
-            ></textarea>
-          </div>
-
-          <div class="box__button button__result">
-            <button class="btn__copy">Copiar</button>
-          </div>
-        </div>
+        <div class="container__box box__result__text"></div>
       </div>
     </main>
 
-    <script src="./src/js/insert-text/insert-text.js" type="module"></script>
-    <!-- <script src="./src/controller/encrypt/encrypt.controller.js"></script> -->
+    <script src="./src/views/header/header.js" type="module"></script>
+
+    <script src="./src/views/main/box-insert-text/box-insert-text.module.js" type="module"></script>
+    <script src="./src/views/main/box-insert-text/box-insert-text.js" type="module"></script>
+    
+   
+    <script
+      src="./src/views/main/box-result-text/box-result-text.js"
+      type="module"
+    ></script>
+    <script
+      src="./src/views/main/box-result-text/box-result-text.module.js"
+      type="module"
+    ></script>
   </body>
 </html>

@@ -1,0 +1,23 @@
+.box__insert__text {
+  width: 70%;
+}
+
+.box__insert__text .box__text__insert label {
+  font-size: var(--font-size-100);
+}
+
+.box__insert__text .box__text__insert textarea {
+  font-size: var(--font-size-300);
+}
+
+.box__button__insert{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.box__button__insert button{
+    width: 100%;
+}
