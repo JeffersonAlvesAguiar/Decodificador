@@ -1,9 +1,15 @@
 .nav__bar {
     width: 100%;
     display: flex;
+    align-items: center;
     padding: 1rem 2rem;
+    gap: 2rem;
   
     box-shadow: 0px 0px 20px 1px var(--dark-blue-500);
     background-color: var(--dark-blue-500);
   }
   
+  .nav__bar .title{
+
+    color: var(--white-100);
+  }
