@@ -1,0 +1,12 @@
+@media screen and (max-width: 430px) {
+
+    .box__insert__text {
+        width: 100%;
+      }
+
+    .box__button__insert{
+        flex-direction: column;
+      }
+
+     
+}

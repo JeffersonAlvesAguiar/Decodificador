@@ -1,6 +1,6 @@
 export function dencrypt(frase) {
     // Substituir letras maiúsculas por minúsculas
-    let resultado = frase.toLowerCase();
+    let result = frase.toLowerCase();
 
     // Substituir letras acentuadas por não acentuadas
     const mapaAcentos = {
@@ -17,20 +17,20 @@ export function dencrypt(frase) {
         'ã': 'a',
         'õ': 'o',
         'ç': 'c',
-        // Adicione outras letras acentuadas e suas substituições conforme necessário
     };
 
-    resultado = resultado.replace(/[áéíóúâêîôûãõç]/g, function (match) {
+    result = result.replace(/[áéíóúâêîôûãõç]/g, function (match) {
         return mapaAcentos[match];
     });
 
     // Remover caracteres especiais
-    resultado = resultado.replace(/[^a-z0-9]/g, ' ');
+    result = result.replace(/[^a-z0-9]/g, ' ');
 
     // Remover espaços extras
-    resultado = resultado.replace(/\s+/g, ' ').trim();
+    result = result.replace(/\s+/g, ' ').trim();
 
-    resultado = resultado.replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ai/g, 'a').replace(/ober/g, 'o').replace(/ufat/g, 'u').trim();
+    // Substituir letras por palavras
+    result = result.replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ai/g, 'a').replace(/ober/g, 'o').replace(/ufat/g, 'u').trim();
 
-    return resultado;
+    return result;
 }
