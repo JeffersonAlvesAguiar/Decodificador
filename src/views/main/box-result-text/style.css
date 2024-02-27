@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+.box__result__text  textarea{
+  font-size: var(--font-size-300);
+}
+
 .box__button__result .btn__copy {
   width: 100%;
 }
